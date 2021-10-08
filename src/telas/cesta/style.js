@@ -1,11 +1,11 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-const widht = Dimensions.get("screen").width;
+const width = Dimensions.get("screen").width;
 
 export const estilos = StyleSheet.create({
   topo: {
     width: "100%",
-    height: (578 / 768) * widht,
+    height: (578 / 768) * width,
   },
   titulo: {
     width: "100%",
