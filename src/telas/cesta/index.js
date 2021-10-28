@@ -3,17 +3,16 @@ import { Image, Text, View } from "react-native";
 
 import Texto from "../../componentes/Texto";
 
-import topo from "../../../assets/topo.png";
-
 import logo from "../../../assets/logo.png";
+
+import Topo from "../Cesta/componentes/Topo";
 
 import { estilos } from "./style";
 
 export default function Cesta() {
   return (
     <>
-      <Image source={topo} style={estilos.topo} />
-      <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
+      <Topo></Topo>
 
       <View style={estilos.cesta}>
         <Texto style={estilos.nome}>Cesta de Verduras</Texto>
