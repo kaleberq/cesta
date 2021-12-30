@@ -9,6 +9,8 @@ import {
 import Cesta from "./src/telas/Cesta";
 import mock from "./src/mocks/cesta";
 
+import AppLoading from "expo-app-loading";
+
 export default function App() {
   const [fonteCarregada] = useFonts({
     MontserratRegular: Montserrat_400Regular,
@@ -16,7 +18,7 @@ export default function App() {
   });
 
   if (!fonteCarregada) {
-    return <View />;
+    return <AppLoading />;
   }
 
   return (
