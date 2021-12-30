@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Button } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
 
 import Texto from "../../../componentes/Texto";
 import { estilos } from "../style";
@@ -22,8 +22,9 @@ export default function Detalhes({
 
       <Texto style={estilos.descricao}>{descricao}</Texto>
       <Texto style={estilos.preco}>{preco}</Texto>
-
-      <Button title={botao} />
+      <TouchableOpacity style={estilos.botao} onPress={() => {}}>
+        <Texto style={estilos.textBotao}>{botao}</Texto>
+      </TouchableOpacity>
     </>
   );
 }

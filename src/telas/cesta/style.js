@@ -52,4 +52,17 @@ export const estilos = StyleSheet.create({
     lineHeight: 42,
     marginTop: 8,
   },
+  botao: {
+    marginTop: 16,
+    backgroundColor: "#2A9F85",
+    paddingVertical: 16,
+    borderRadius: 6,
+  },
+  textBotao: {
+    textAlign: "center",
+    color: "#ffffff",
+    fontSize: 16,
+    lineHeight: 26,
+    fontWeight: "bold",
+  },
 });
